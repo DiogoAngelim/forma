@@ -56,7 +56,7 @@ This repository includes frontend, backend, and shared packages for the Forma ap
 2. Start the frontend visual builder (in another terminal):
    ```bash
    cd frontend/artifacts/visual-builder
-   pnpm run dev
+   PORT=5173 BASE_PATH=/ pnpm run dev
    ```
    The frontend will be available at `http://localhost:5173`.
 
