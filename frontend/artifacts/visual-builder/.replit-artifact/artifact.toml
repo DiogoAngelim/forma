@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Visual Builder"
+version = "1.0.0"
+id = "artifacts/visual-builder"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24488
+
+[services.development]
+run = "pnpm --filter @workspace/visual-builder run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/visual-builder", "run", "build" ]
+publicDir = "artifacts/visual-builder/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24488"
+BASE_PATH = "/"
