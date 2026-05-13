@@ -1,0 +1,10 @@
+{
+  "blocks": [
+    {
+      "id": "block-1",
+      "name": "core/html",
+      "originalHtml": "<!doctype html><html><head><title>Flow</title><link rel=\"stylesheet\" href=\"style.css\"></head><body><main><h1>Flow Test</h1><p>Uploaded page</p></main></body></html>"
+    }
+  ],
+  "htmlEntry": "index.html"
+}

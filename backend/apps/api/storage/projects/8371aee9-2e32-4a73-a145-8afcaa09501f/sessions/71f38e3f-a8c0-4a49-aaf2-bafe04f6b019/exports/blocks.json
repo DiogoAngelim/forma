@@ -1,0 +1,7 @@
+[
+  {
+    "id": "block-1",
+    "name": "core/html",
+    "originalHtml": "<!doctype html><html><body><h1>Original Page</h1><img src=\"../assets/logo.svg\"></body></html>"
+  }
+]

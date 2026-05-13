@@ -1,0 +1,3242 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank">
+
+
+
+
+</head>
+<body><!-- wp:wp/cardwithbackgroundimage -->
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+  <header>
+    <div class="relative bg-white my-block">
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="#">
+            <span class="sr-only">Workflow</span>
+            <img class="h-8 w-auto sm:h-10" src="http://localhost/mark.svg" alt="Alt">
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="toggle-mobile-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+            <span class="sr-only">Open menu</span>
+            <!-- Hamburger icon -->
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#4B5563">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex space-x-10">
+          <!-- Solutions flyout -->
+          <div class="relative">
+            <button type="button"
+              class="toggle-solutions text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900">
+              <span>Solutions</span>
+              <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" fill="#9CA3AF" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+
+            <!-- Flyout menu -->
+            <div
+              class="solutions-menu hidden absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+              <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                  <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                    <div
+                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-fuchsia-600 text-white">
+                      <svg class="h-6 w-6" stroke="#FFF" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                      </svg>
+                    </div>
+                    <div class="ml-4">
+                      <p class="text-base font-medium text-gray-900">Inbox</p>
+                      <p class="mt-1 text-sm text-gray-500">Get your messages in one place.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Pricing</a>
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Partners</a>
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Company</a>
+        </nav>
+
+        <!-- Sign in/up -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
+          <a href="#"
+            class="ml-8 px-4 py-2 rounded-md text-base font-medium text-white bg-fuchsia-600 hover:bg-fuchsia-700">Sign
+            up</a>
+        </div>
+      </div>
+
+      <!-- Mobile menu panel -->
+      <div class="mobile-menu hidden absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="http://localhost/mark.svg" alt="Workflow">
+              </div>
+              <div class="-mr-2">
+                <button type="button"
+                  class="close-mobile-menu bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Close icon -->
+                  <svg class="h-6 w-6" stroke="#4B5563" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Solutions</a>
+                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Pricing</a>
+                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Partners</a>
+                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Company</a>
+              </nav>
+            </div>
+          </div>
+          <div class="py-6 px-5 space-y-6">
+            <div>
+              <a href="#"
+                class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-fuchsia-600 hover:bg-fuchsia-700">Sign
+                up</a>
+              <p class="mt-6 text-center text-base font-medium text-gray-500">
+                Existing customer?
+                <a href="#" class="text-fuchsia-600 hover:text-fuchsia-500">Sign in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <!-- Hero card -->
+      <div class="relative">
+        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+            <div class="absolute inset-0">
+              <img class="h-full w-full object-cover"
+                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                alt="People working on laptops">
+              <div class="absolute inset-0 bg-fuchsia-700 mix-blend-multiply"></div>
+            </div>
+            <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+              <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                <span class="block text-white">Take control of your</span>
+                <span class="block text-fuchsia-200">customer support</span>
+              </h1>
+              <p class="mt-6 max-w-lg mx-auto text-center text-xl text-fuchsia-200 sm:max-w-3xl">Anim aute id magna
+                aliqua
+                ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat aliqua.</p>
+              <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                  <a href="#"
+                    class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-fuchsia-700 bg-white hover:bg-fuchsia-50 sm:px-8">
+                    Get started </a>
+                  <a href="#"
+                    class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-fuchsia-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+                    Live demo </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo cloud -->
+      <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+          <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Trusted by over 5 very
+            average small businesses</p>
+          <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="img/logos/tuple-logo-gray-900.svg" alt="Tuple">
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="img/logos/savvycal-logo-gray-900.svg" alt="Mirage">
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="img/logos/statamic-logo-gray-900.svg" alt="StaticKit">
+            </div>
+            <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+              <img class="h-12" src="img/logos/transistor-logo-gray-900.svg" alt="Transistor">
+            </div>
+            <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+              <img class="h-12" src="img/logos/reform-logo-gray-900.svg" alt="Reform">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More main page content here... -->
+  </main>
+</div>
+<!-- /wp:wp/cardwithbackgroundimage -->
+
+<!-- wp:wp/darkwithillustration -->
+<div class="relative overflow-hidden">
+  <header class="relative">
+    <div class="bg-gray-900 pt-6">
+      <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+        <div class="flex items-center flex-1">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="#">
+              <span class="sr-only">Workflow</span>
+              <img class="h-8 w-auto sm:h-10" src="img/
+logos/workflow-mark-fuchsia-500.svg" alt="Alt">
+            </a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button type="button"
+                class="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden space-x-8 md:flex md:ml-10">
+            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Product</a>
+
+            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Features</a>
+
+            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Marketplace</a>
+
+            <a href="#" class="text-base font-medium text-white hover:text-gray-300">Company</a>
+          </div>
+        </div>
+        <div class="hidden md:flex md:items-center md:space-x-6">
+          <a href="#" class="text-base font-medium text-white hover:text-gray-300"> Log in </a>
+          <a href="#"
+            class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700">
+            Start free trial </a>
+        </div>
+      </nav>
+    </div>
+
+    <!--
+      Mobile menu, show/hide based on menu open state.
+
+      Entering: "duration-150 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+    <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
+      <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+        <div class="px-5 pt-4 flex items-center justify-between">
+          <div>
+            <img class="h-8 w-auto" src="img/
+logos/workflow-mark-fuchsia-600.svg" alt="Alt">
+          </div>
+          <div class="-mr-2">
+            <button type="button"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fuchsia-600">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="pt-5 pb-6">
+          <div class="px-2 space-y-1">
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Product</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Features</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <div class="mt-6 px-5">
+            <a href="#"
+              class="block text-center w-full py-3 px-4 rounded-md shadow bg-fuchsia-600 text-white font-medium hover:bg-fuchsia-700">Start
+              free trial</a>
+          </div>
+          <div class="mt-6 px-5">
+            <p class="text-center text-base font-medium text-gray-500">Existing customer? <a href="#"
+                class="text-gray-900 hover:underline">Login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
+      <div class="mx-auto max-w-7xl lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div
+            class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
+            <div class="lg:py-24">
+              <a href="#"
+                class="inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200">
+                <span
+                  class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-fuchsia-500 rounded-full">We're
+                  hiring</span>
+                <span class="ml-4 text-sm">Visit our careers page</span>
+                <!-- Heroicon name: solid/chevron-right -->
+                <svg class="ml-2 w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                  fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+              <h1
+                class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl">
+                <span class="block">A better way to</span>
+                <span class="block text-fuchsia-400">ship web apps</span>
+              </h1>
+              <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Anim aute id magna aliqua
+                ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+                fugiat.</p>
+              <div class="mt-10 sm:mt-12">
+                <form action="#" class="sm:max-w-xl sm:mx-auto lg:mx-0">
+                  <div class="sm:flex">
+                    <div class="min-w-0 flex-1">
+                      <label for="email" class="sr-only">Email address</label>
+                      <input id="email" type="email" placeholder="Enter your email"
+                        class="block w-full h-full px-4 py-4 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-300 focus:ring-offset-gray-900">
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                      <button type="submit"
+                        class="block w-full py-3 px-4 rounded-md shadow bg-fuchsia-500 text-white font-medium hover:bg-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-300 focus:ring-offset-gray-900">Start
+                        free trial</button>
+                    </div>
+                  </div>
+                  <p class="mt-3 text-sm text-gray-300 sm:mt-4">Enjoy a free 14-day trial—no credit card required.
+                    By providing your email, you agree to our <a href="#" class="font-medium text-white">terms of
+                      service</a>.</p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 -mb-16 sm:-mb-48 lg:m-0 lg:relative">
+            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0">
+              <!-- Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ -->
+              <img class="w-full lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/
+cloud-illustration-fuchsia-400.svg" alt="Alt">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More main page content here... -->
+  </main>
+</div>
+<!-- /wp:wp/darkwithillustration -->
+
+<!-- wp:wp/herosimplecentered -->
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="relative bg-gray-50 overflow-hidden">
+  <div class="hidden sm:block sm:absolute sm:inset-y-0 sm:h-full sm:w-full" aria-hidden="true">
+    <div class="relative h-full max-w-7xl mx-auto">
+      <svg class="absolute right-full transform translate-y-1/4 translate-x-1/4 lg:translate-x-1/2 text-gray-200"
+        width="404" height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="2" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+      </svg>
+      <svg
+        class="absolute left-full transform -translate-y-3/4 -translate-x-1/4 md:-translate-y-1/2 lg:-translate-x-1/2 text-gray-200"
+        width="404" height="784" fill="none" viewBox="0 0 404 784">
+        <defs>
+          <pattern id="5d0dd344-b041-4d26-bec4-8d33ea57ec9b" x="0" y="0" width="20" height="20"
+            patternUnits="userSpaceOnUse">
+            <circle cx="2" cy="2" r="2" width="4" height="4" class="text-gray-200" fill="currentColor" />
+          </pattern>
+        </defs>
+        <rect width="404" height="784" fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="relative pt-6 pb-16 sm:pb-24">
+    <div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <nav class="relative flex items-center justify-between sm:h-10 md:justify-center" aria-label="Global">
+          <div class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+              <a href="#">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10" src="img/
+logos/workflow-mark-fuchsia-600.svg" alt="Alt">
+              </a>
+              <div class="-mr-2 flex items-center md:hidden">
+                <button type="button"
+                  class="bg-gray-50 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fuchsia-500"
+                  aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Heroicon name: outline/menu -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:flex md:space-x-10">
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+          </div>
+          <div class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+            <span class="inline-flex rounded-md shadow">
+              <a href="#"
+                class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-fuchsia-600 bg-white hover:bg-gray-50">
+                Log in </a>
+            </span>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="img/
+logos/workflow-mark-fuchsia-600.svg" alt="Alt">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fuchsia-500">
+                <span class="sr-only">Close menu</span>
+                <!-- Heroicon name: outline/x -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3">
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <a href="#"
+            class="block w-full px-5 py-3 text-center font-medium text-fuchsia-600 bg-gray-50 hover:bg-gray-100">
+            Log in </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
+      <div class="text-center">
+        <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+          <span class="block xl:inline">Data to enhance your</span>
+          <span class="block text-fuchsia-600 xl:inline">online business</span>
+        </h1>
+        <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">Anim aute id
+          magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+          occaecat fugiat aliqua.</p>
+        <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 gap-3">
+          <div class="rounded-md shadow">
+            <a href="#"
+              class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-fuchsia-600 hover:bg-fuchsia-700 md:py-4 md:text-lg md:px-10">
+              Get started </a>
+          </div>
+          <div class="rounded-md shadow sm:mt-0">
+            <a href="#"
+              class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-fuchsia-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+              Live demo </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<!-- /wp:wp/herosimplecentered -->
+
+<!-- wp:wp/herosplitwithimage -->
+<style>
+  /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+  @layer properties {
+    @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+
+      *,
+      :before,
+      :after,
+      ::backdrop {
+        --tw-font-weight: initial;
+        --tw-tracking: initial;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-color: initial;
+        --tw-shadow-alpha: 100%;
+        --tw-inset-shadow: 0 0 #0000;
+        --tw-inset-shadow-color: initial;
+        --tw-inset-shadow-alpha: 100%;
+        --tw-ring-color: initial;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-inset-ring-color: initial;
+        --tw-inset-ring-shadow: 0 0 #0000;
+        --tw-ring-inset: initial;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-outline-style: solid
+      }
+    }
+  }
+
+  @layer theme {
+
+    :root,
+    :host {
+      --font-sans: InterVariable, system-ui, sans-serif;
+      --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"
+    }
+  }
+
+  @layer base {
+
+    *,
+    :after,
+    :before,
+    ::backdrop {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    ::file-selector-button {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    :host {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      line-height: 1.5;
+      font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      font-feature-settings: var(--font-sans--font-feature-settings);
+      font-variation-settings: initial;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-feature-settings: initial;
+      font-variation-settings: initial;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      vertical-align: baseline;
+      font-size: 75%;
+      line-height: 0;
+      position: relative
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    summary {
+      display: list-item
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none
+    }
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      vertical-align: middle;
+      display: block
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    ::file-selector-button {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    :where(select:is([multiple], [size])) optgroup {
+      font-weight: bolder
+    }
+
+    :where(select:is([multiple], [size])) optgroup option {
+      padding-inline-start: 20px
+    }
+
+    ::file-selector-button {
+      margin-inline-end: 4px
+    }
+
+    ::placeholder {
+      opacity: 1
+    }
+
+    @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+      ::placeholder {
+        color: currentColor
+      }
+
+      @supports (color:color-mix(in lab, red, red)) {
+        ::placeholder {
+          color: color-mix(in oklab, currentcolor 50%, transparent)
+        }
+      }
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-date-and-time-value {
+      min-height: 1lh;
+      text-align: inherit
+    }
+
+    ::-webkit-datetime-edit {
+      display: inline-flex
+    }
+
+    ::-webkit-datetime-edit-fields-wrapper {
+      padding: 0
+    }
+
+    ::-webkit-datetime-edit {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-year-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-month-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-day-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-hour-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-minute-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-second-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-millisecond-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-meridiem-field {
+      padding-block: 0
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    button,
+    input:where([type=button], [type=reset], [type=submit]) {
+      appearance: button
+    }
+
+    ::file-selector-button {
+      appearance: button
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none !important
+    }
+  }
+
+  @layer components;
+
+  @layer utilities {
+    .rhw {
+      position: absolute
+    }
+
+    .rhx {
+      position: relative
+    }
+
+    .rhy {
+      inset: 0
+    }
+
+    .rhz {
+      margin-inline: auto
+    }
+
+    .ria {
+      margin-top: 2rem
+    }
+
+    .rib {
+      margin-top: 2.5rem
+    }
+
+    .ric {
+      margin-top: 6rem
+    }
+
+    .rid {
+      display: flex
+    }
+
+    .rie {
+      display: none
+    }
+
+    .rif {
+      aspect-ratio: 3/2
+    }
+
+    .rig {
+      height: 2.75rem
+    }
+
+    .rih {
+      width: 100%
+    }
+
+    .rii {
+      max-width: 80rem
+    }
+
+    .rij {
+      max-width: 32rem
+    }
+
+    .rik {
+      align-items: center
+    }
+
+    .ril {
+      column-gap: 1.5rem
+    }
+
+    .rim {
+      border-radius: 3.40282e38px
+    }
+
+    .rin {
+      border-radius: .375rem
+    }
+
+    .rio {
+      background-color: #f9fafb
+    }
+
+    .rip {
+      background-color: #c800de
+    }
+
+    .riq {
+      background-color: #fff
+    }
+
+    .rir {
+      object-fit: cover
+    }
+
+    .ris {
+      padding-inline: .75rem
+    }
+
+    .rit {
+      padding-inline: .875rem
+    }
+
+    .riu {
+      padding-inline: 1.5rem
+    }
+
+    .riv {
+      padding-block: .25rem
+    }
+
+    .riw {
+      padding-block: .625rem
+    }
+
+    .rix {
+      padding-top: 2.5rem
+    }
+
+    .riy {
+      padding-bottom: 6rem
+    }
+
+    .riz {
+      font-size: 3rem;
+      line-height: var(--tw-leading, 1)
+    }
+
+    .rja {
+      font-size: 1.125rem;
+      line-height: var(--tw-leading, calc(1.75/1.125))
+    }
+
+    .rjb {
+      font-size: .875rem;
+      line-height: var(--tw-leading, calc(1.25/.875))
+    }
+
+    .rjc {
+      font-size: .875rem;
+      line-height: 1.5rem
+    }
+
+    .rjd {
+      --tw-font-weight: 500;
+      font-weight: 500
+    }
+
+    .rje {
+      --tw-font-weight: 600;
+      font-weight: 600
+    }
+
+    .rjf {
+      --tw-tracking: -.025em;
+      letter-spacing: -.025em
+    }
+
+    .rjg {
+      text-wrap: pretty
+    }
+
+    .rjh {
+      white-space: nowrap
+    }
+
+    .rji {
+      color: rgb(106, 114, 130)
+    }
+
+    .rjj {
+      color: #101828
+    }
+
+    .rjk {
+      color: #c800de
+    }
+
+    .rjl {
+      color: #fff
+    }
+
+    .rjm {
+      --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, #0000000d);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .rjn {
+      --tw-ring-shadow: var(--tw-ring-inset, )0 0 0 calc(1px + var(--tw-ring-offset-width))var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .rjo {
+      --tw-ring-color: oklab(21% -.00316127 -.0338527/.1)
+    }
+
+    @media (hover:hover) {
+      .rjp:hover {
+        background-color: #e12afb
+      }
+
+      .rjq:hover {
+        --tw-ring-color: oklab(21% -.00316127 -.0338527/.2)
+      }
+    }
+
+    .rjr:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 2px
+    }
+
+    .rjs:focus-visible {
+      outline-offset: 2px
+    }
+
+    .rjt:focus-visible {
+      outline-color: #c800de
+    }
+
+    @media (min-width:40rem) {
+      .rju {
+        margin-top: 2.5rem
+      }
+
+      .rjv {
+        margin-top: 8rem
+      }
+
+      .rjw {
+        display: flex
+      }
+
+      .rjx {
+        padding-bottom: 8rem
+      }
+
+      .rjy {
+        font-size: 4.5rem;
+        line-height: var(--tw-leading, 1)
+      }
+
+      .rjz {
+        font-size: 1.25rem;
+        line-height: 2rem
+      }
+    }
+
+    @media (min-width:64rem) {
+      .rka {
+        position: absolute
+      }
+
+      .rkb {
+        inset: 0
+      }
+
+      .rkc {
+        grid-column: span 5/span 5
+      }
+
+      .rkd {
+        grid-column: span 7/span 7
+      }
+
+      .rke {
+        margin-inline: 0
+      }
+
+      .rkf {
+        margin-top: 4rem
+      }
+
+      .rkg {
+        margin-right: -2rem
+      }
+
+      .rkh {
+        display: grid
+      }
+
+      .rki {
+        aspect-ratio: auto
+      }
+
+      .rkj {
+        height: 100%
+      }
+
+      .rkk {
+        grid-template-columns: repeat(12, minmax(0, 1fr))
+      }
+
+      .rkl {
+        column-gap: 2rem
+      }
+
+      .rkm {
+        padding-inline: 0
+      }
+
+      .rkn {
+        padding-inline: 2rem
+      }
+
+      .rko {
+        padding-top: 10rem
+      }
+
+      .rkp {
+        padding-bottom: 12rem
+      }
+    }
+
+    @media (min-width:80rem) {
+      .absolute {
+        position: absolute
+      }
+
+      .rkr {
+        inset: 0
+      }
+
+      .rks {
+        left: 50%
+      }
+
+      .rkt {
+        grid-column: span 6/span 6
+      }
+
+      .rku {
+        margin-right: 0
+      }
+    }
+  }
+
+  @property --tw-font-weight {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-tracking {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-shadow-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+  }
+
+  @property --tw-inset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-inset-shadow-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-inset-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+  }
+
+  @property --tw-ring-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-inset-ring-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-inset-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-ring-inset {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-ring-offset-width {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0
+  }
+
+  @property --tw-ring-offset-color {
+    syntax: "*";
+    inherits: false;
+    initial-value: #fff
+  }
+
+  @property --tw-ring-offset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-outline-style {
+    syntax: "*";
+    inherits: false;
+    initial-value: solid
+  }
+</style>
+<div class="rhx riq">
+  <div class="rhz rii rkh rkk rkl rkn">
+    <div class="riu rix riy rjx rkd rkm rko rkp rkt">
+      <div class="rhz rij rke"><img alt="Your Company"
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&amp;shade=600" class="rig">
+        <div class="rie rjv rjw rkf">
+          <div class="rhx rim ris riv rjc rji rjn rjo rjq">Anim aute id magna aliqua ad ad non deserunt sunt. <a
+              href="#" class="rje rjh rjk"><span aria-hidden="true" class="rhw rhy"></span>Read more <span
+                aria-hidden="true">→</span></a></div>
+        </div>
+        <h1 class="ric riz rje rjf rjg rjj rju rjy">Data to enrich your business</h1>
+        <p class="ria rja rjd rjg rji rjz">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+          cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+        <div class="rib rid rik ril"><a href="#" class="rin rip rit riw rjb rje rjl rjm rjp rjr rjs rjt">Get
+            started</a><a href="#" class="rjc rje rjj">Learn more <span aria-hidden="true">→</span></a></div>
+      </div>
+    </div>
+    <div class="rhx rkc rkg absolute rkr rks rku"><img alt="Alt"
+        src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2102&amp;q=80"
+        class="rif rih rio rir rka rkb rki rkj"></div>
+  </div>
+</div>
+<!-- /wp:wp/herosplitwithimage -->
+
+<!-- wp:wp/herowithimagetiles -->
+<style>
+  /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+  @layer properties {
+    @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+
+      *,
+      :before,
+      :after,
+      ::backdrop {
+        --tw-space-y-reverse: 0;
+        --tw-divide-y-reverse: 0;
+        --tw-border-style: solid;
+        --tw-gradient-position: initial;
+        --tw-gradient-from: #0000;
+        --tw-gradient-via: #0000;
+        --tw-gradient-to: #0000;
+        --tw-gradient-stops: initial;
+        --tw-gradient-via-stops: initial;
+        --tw-gradient-from-position: 0%;
+        --tw-gradient-via-position: 50%;
+        --tw-gradient-to-position: 100%;
+        --tw-font-weight: initial;
+        --tw-tracking: initial;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-color: initial;
+        --tw-shadow-alpha: 100%;
+        --tw-inset-shadow: 0 0 #0000;
+        --tw-inset-shadow-color: initial;
+        --tw-inset-shadow-alpha: 100%;
+        --tw-ring-color: initial;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-inset-ring-color: initial;
+        --tw-inset-ring-shadow: 0 0 #0000;
+        --tw-ring-inset: initial;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-blur: initial;
+        --tw-brightness: initial;
+        --tw-contrast: initial;
+        --tw-grayscale: initial;
+        --tw-hue-rotate: initial;
+        --tw-invert: initial;
+        --tw-opacity: initial;
+        --tw-saturate: initial;
+        --tw-sepia: initial;
+        --tw-drop-shadow: initial;
+        --tw-drop-shadow-color: initial;
+        --tw-drop-shadow-alpha: 100%;
+        --tw-drop-shadow-size: initial;
+        --tw-outline-style: solid
+      }
+    }
+  }
+
+  @layer theme {
+
+    :root,
+    :host {
+      --font-sans: InterVariable, system-ui, sans-serif;
+      --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"
+    }
+  }
+
+  @layer base {
+
+    *,
+    :after,
+    :before,
+    ::backdrop {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    ::file-selector-button {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    :host {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      line-height: 1.5;
+      font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      font-feature-settings: var(--font-sans--font-feature-settings);
+      font-variation-settings: initial;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-feature-settings: initial;
+      font-variation-settings: initial;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      vertical-align: baseline;
+      font-size: 75%;
+      line-height: 0;
+      position: relative
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    summary {
+      display: list-item
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none
+    }
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      vertical-align: middle;
+      display: block
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    ::file-selector-button {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    :where(select:is([multiple], [size])) optgroup {
+      font-weight: bolder
+    }
+
+    :where(select:is([multiple], [size])) optgroup option {
+      padding-inline-start: 20px
+    }
+
+    ::file-selector-button {
+      margin-inline-end: 4px
+    }
+
+    ::placeholder {
+      opacity: 1
+    }
+
+    @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+      ::placeholder {
+        color: currentColor
+      }
+
+      @supports (color:color-mix(in lab, red, red)) {
+        ::placeholder {
+          color: color-mix(in oklab, currentcolor 50%, transparent)
+        }
+      }
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-date-and-time-value {
+      min-height: 1lh;
+      text-align: inherit
+    }
+
+    ::-webkit-datetime-edit {
+      display: inline-flex
+    }
+
+    ::-webkit-datetime-edit-fields-wrapper {
+      padding: 0
+    }
+
+    ::-webkit-datetime-edit {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-year-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-month-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-day-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-hour-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-minute-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-second-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-millisecond-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-meridiem-field {
+      padding-block: 0
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    button,
+    input:where([type=button], [type=reset], [type=submit]) {
+      appearance: button
+    }
+
+    ::file-selector-button {
+      appearance: button
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none !important
+    }
+  }
+
+  @layer components;
+
+  @layer utilities {
+    .aepg {
+      pointer-events: none
+    }
+
+    .aeph {
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      overflow: hidden
+    }
+
+    .aepi {
+      position: absolute
+    }
+
+    .aepj {
+      position: fixed
+    }
+
+    .aepk {
+      position: relative
+    }
+
+    .aepl {
+      inset: 0
+    }
+
+    .aepm {
+      inset-inline: 0
+    }
+
+    .aepn {
+      inset-block: 0
+    }
+
+    .aepo {
+      top: 0
+    }
+
+    .aepp {
+      right: 0
+    }
+
+    .aepq {
+      left: 50%
+    }
+
+    .aepr {
+      isolation: isolate
+    }
+
+    .aeps {
+      z-index: calc(10*-1)
+    }
+
+    .aept {
+      z-index: 50
+    }
+
+    .aepu {
+      margin: -.375rem
+    }
+
+    .aepv {
+      margin: -.625rem
+    }
+
+    .aepw {
+      margin-inline: -.75rem
+    }
+
+    .aepx {
+      margin-inline: auto
+    }
+
+    .aepy {
+      margin-block: -1.5rem
+    }
+
+    .aepz {
+      margin-top: 1.5rem
+    }
+
+    .aeqa {
+      margin-top: 2rem
+    }
+
+    .aeqb {
+      margin-top: 2.5rem
+    }
+
+    .aeqc {
+      margin-top: 3.5rem
+    }
+
+    .aeqd {
+      margin-right: auto
+    }
+
+    .aeqe {
+      margin-left: -6rem
+    }
+
+    .aeqf {
+      margin-left: auto
+    }
+
+    .aeqg {
+      display: block
+    }
+
+    .aeqh {
+      display: flex
+    }
+
+    .aeqi {
+      display: flow-root
+    }
+
+    .aeqj {
+      display: none
+    }
+
+    .aeqk {
+      display: inline-flex
+    }
+
+    .aeql {
+      aspect-ratio: 2/3
+    }
+
+    .aeqm {
+      aspect-ratio: 801/1036
+    }
+
+    .aeqn {
+      width: 1.5rem;
+      height: 1.5rem
+    }
+
+    .aeqo {
+      height: 2rem
+    }
+
+    .aeqp {
+      height: 64rem
+    }
+
+    .aeqq {
+      width: 11rem
+    }
+
+    .aeqr {
+      width: 50.0625rem
+    }
+
+    .aeqs {
+      width: auto
+    }
+
+    .aeqt {
+      width: 100%
+    }
+
+    .aequ {
+      max-width: 42rem
+    }
+
+    .aeqv {
+      max-width: 80rem
+    }
+
+    .aeqw {
+      flex: none
+    }
+
+    .aeqx {
+      transform: translateZ(0)var(--tw-rotate-x, )var(--tw-rotate-y, )var(--tw-rotate-z, )var(--tw-skew-x, )var(--tw-skew-y, )
+    }
+
+    .aeqy {
+      align-items: center
+    }
+
+    .aeqz {
+      justify-content: space-between
+    }
+
+    .aera {
+      justify-content: center
+    }
+
+    .aerb {
+      justify-content: flex-end
+    }
+
+    .aerc {
+      gap: 2rem
+    }
+
+    :where(.aerd>:not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(.25rem*2)*var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(.25rem*2)*calc(1 - var(--tw-space-y-reverse)))
+    }
+
+    :where(.aere>:not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(.25rem*8)*var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(.25rem*8)*calc(1 - var(--tw-space-y-reverse)))
+    }
+
+    .aerf {
+      column-gap: 1.5rem
+    }
+
+    .aerg {
+      column-gap: 3.5rem
+    }
+
+    :where(.aerh>:not(:last-child)) {
+      --tw-divide-y-reverse: 0;
+      border-bottom-style: var(--tw-border-style);
+      border-top-style: var(--tw-border-style);
+      border-top-width: calc(1px*var(--tw-divide-y-reverse));
+      border-bottom-width: calc(1px*calc(1 - var(--tw-divide-y-reverse)))
+    }
+
+    :where(.aeri>:not(:last-child)) {
+      border-color: oklab(55.1% -.00265162 -.0268695/.1)
+    }
+
+    .aerj {
+      overflow: hidden
+    }
+
+    .aerk {
+      overflow: visible
+    }
+
+    .aerl {
+      overflow-y: auto
+    }
+
+    .aerm {
+      border-radius: .5rem
+    }
+
+    .aern {
+      border-radius: .375rem
+    }
+
+    .aero {
+      border-radius: .75rem
+    }
+
+    .aerp {
+      background-color: oklab(21% -.00316127 -.0338527/.05)
+    }
+
+    .aerq {
+      background-color: #c800de
+    }
+
+    .aerr {
+      background-color: #fff
+    }
+
+    .aers {
+      --tw-gradient-position: to top right
+    }
+
+    @supports (background-image:linear-gradient(in lab, red, red)) {
+      .aers {
+        --tw-gradient-position: to top right in oklab
+      }
+    }
+
+    .aers {
+      background-image: linear-gradient(var(--tw-gradient-stops))
+    }
+
+    .aert {
+      --tw-gradient-from: #ff80b5;
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from)var(--tw-gradient-from-position), var(--tw-gradient-to)var(--tw-gradient-to-position))
+    }
+
+    .aeru {
+      --tw-gradient-to: #9089fc;
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from)var(--tw-gradient-from-position), var(--tw-gradient-to)var(--tw-gradient-to-position))
+    }
+
+    .aerv {
+      -webkit-mask-image: radial-gradient(32rem 32rem, #fff, #0000);
+      mask-image: radial-gradient(32rem 32rem, #fff, #0000)
+    }
+
+    .aerw {
+      fill: #f9fafb
+    }
+
+    .aerx {
+      stroke: #e5e7eb
+    }
+
+    .aery {
+      object-fit: cover
+    }
+
+    .aerz {
+      padding: .375rem
+    }
+
+    .aesa {
+      padding: .625rem
+    }
+
+    .aesb {
+      padding: 1.5rem
+    }
+
+    .aesc {
+      padding-inline: .75rem
+    }
+
+    .aesd {
+      padding-inline: .875rem
+    }
+
+    .aese {
+      padding-inline: 1.5rem
+    }
+
+    .aesf {
+      padding-block: .5rem
+    }
+
+    .aesg {
+      padding-block: .625rem
+    }
+
+    .aesh {
+      padding-block: 1.5rem
+    }
+
+    .aesi {
+      padding-top: 8rem
+    }
+
+    .aesj {
+      padding-top: 9rem
+    }
+
+    .aesk {
+      padding-bottom: 8rem
+    }
+
+    .aesl {
+      font-size: 3rem;
+      line-height: var(--tw-leading, 1)
+    }
+
+    .aesm {
+      font-size: 1rem;
+      line-height: 1.75rem
+    }
+
+    .aesn {
+      font-size: 1.125rem;
+      line-height: var(--tw-leading, calc(1.75/1.125))
+    }
+
+    .aeso {
+      font-size: .875rem;
+      line-height: var(--tw-leading, calc(1.25/.875))
+    }
+
+    .aesp {
+      font-size: .875rem;
+      line-height: 1.5rem
+    }
+
+    .aesq {
+      --tw-font-weight: 500;
+      font-weight: 500
+    }
+
+    .aesr {
+      --tw-font-weight: 600;
+      font-weight: 600
+    }
+
+    .aess {
+      --tw-tracking: -.025em;
+      letter-spacing: -.025em
+    }
+
+    .aest {
+      text-wrap: pretty
+    }
+
+    .aesu {
+      color: rgb(106, 114, 130)
+    }
+
+    .aesv {
+      color: rgb(54, 65, 83)
+    }
+
+    .aesw {
+      color: #101828
+    }
+
+    .aesx {
+      color: #fff
+    }
+
+    .aesy {
+      opacity: .3
+    }
+
+    .aesz {
+      --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .aeta {
+      --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, #0000000d);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .aetb {
+      --tw-ring-shadow: var(--tw-ring-inset, )0 0 0 calc(1px + var(--tw-ring-offset-width))var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .aetc {
+      --tw-ring-color: oklab(21% -.00316127 -.0338527/.1)
+    }
+
+    .aetd {
+      --tw-blur: blur(64px);
+      filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, )
+    }
+
+    .aete {
+      --tw-ring-inset: inset
+    }
+
+    .aetf::backdrop {
+      background-color: #0000
+    }
+  }
+</style>
+<div class="aerj">
+  <div class="aerr">
+    <header class="aepi aepm aepo aept">
+      <nav aria-label="Global" class="aepx aeqh aeqv aeqy aeqz aesb aeun">
+        <div class="aeqh aeui"><a href="#" class="aepu aerz"><span class="aeph">Your Company</span><img alt="Alt"
+              src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&amp;shade=600"
+              class="aeqo aeqs"></a></div>
+        <div class="aeqh aeuf"><button type="button" class="aepv aeqk aeqy aera aern aesa aesv"><span class="aeph">Open
+              main menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true" data-slot="icon" class="aeqn">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+              </path>
+            </svg></button></div>
+        <div class="aeqj aeue aeum"><a href="#" class="aesp aesr aesw">Product</a><a href="#"
+            class="aesp aesr aesw">Features</a><a href="#" class="aesp aesr aesw">Marketplace</a><a href="#"
+            class="aesp aesr aesw">Company</a></div>
+        <div class="aeqj aeue aeui aeul"><a href="#" class="aesp aesr aesw">Log in <span aria-hidden="true">→</span></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="aepk aepr"><svg aria-hidden="true" class="aepi aepm aepo aeps aeqp aeqt aerv aerx">
+          <defs>
+            <pattern x="50%" y="-1" id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200"
+              patternUnits="userSpaceOnUse">
+              <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+          </defs>
+          <g x="50%" y="-1" class="aerk aerw">
+            <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+              stroke-width="0"></path>
+          </g>
+          <rect fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)" width="100%" height="100%" stroke-width="0"></rect>
+        </svg>
+        <div aria-hidden="true" class="aepi aepo aepp aepq aeps aeqe aeqx aerj aetd aeud aeus clip-path-parent">
+          <div class="aeqm aeqr aers aert aeru aesy"
+            style="clip-path: polygon(63.1% 29.5%, 100% 17.1%, 76.6% 3%, 48.4% 0%, 44.6% 4.7%, 54.5% 25.3%, 59.8% 49%, 55.2% 57.8%, 44.4% 57.2%, 27.8% 47.9%, 35.1% 81.5%, 0% 97.7%, 39.2% 100%, 35.2% 81.4%, 97.2% 52.8%, 63.1% 29.5%);">
+          </div>
+        </div>
+        <div class="aerj">
+          <div class="aepx aeqv aese aesj aesk aett aeun aeuo">
+            <div class="aepx aequ aerg aeub aeue aeug aeuk">
+              <div class="aepk aeqt aeuh aeuj aeut">
+                <h1 class="aesl aesr aess aest aesw aetw">We’re changing the way people connect</h1>
+                <p class="aeqa aesn aesq aest aesu aeto aetx aeug">Anim aute id magna aliqua ad ad non deserunt sunt.
+                  Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua. Anim aute
+                  id magna aliqua ad ad non deserunt sunt.</p>
+                <div class="aeqb aeqh aeqy aerf"><a href="#"
+                    class="aern aerq aesd aesg aeso aesr aesx aeta aeth aeti aetj aetk">Get started</a><a href="#"
+                    class="aesp aesr aesw">Live demo <span aria-hidden="true">→</span></a></div>
+              </div>
+              <div class="aeqc aeqh aerb aerc aetl aetq aetv aeuc aeuq">
+                <div class="aeqf aeqq aeqw aere aesi aetn aetu aeua aeup aeur aeuu">
+                  <div class="aepk"><img alt="Alt"
+                      src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;h=528&amp;q=80"
+                      class="aeql aeqt aero aerp aery aesz">
+                    <div class="aepg aepi aepl aero aetb aetc aete"></div>
+                  </div>
+                </div>
+                <div class="aeqd aeqq aeqw aere aetm aets aeup">
+                  <div class="aepk"><img alt="Alt"
+                      src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;h=528&amp;q=80"
+                      class="aeql aeqt aero aerp aery aesz">
+                    <div class="aepg aepi aepl aero aetb aetc aete"></div>
+                  </div>
+                  <div class="aepk"><img alt="Alt"
+                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=.4&amp;w=396&amp;h=528&amp;q=80"
+                      class="aeql aeqt aero aerp aery aesz">
+                    <div class="aepg aepi aepl aero aetb aetc aete"></div>
+                  </div>
+                </div>
+                <div class="aeqq aeqw aere aesi aetr">
+                  <div class="aepk"><img alt="Alt"
+                      src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;crop=left&amp;w=400&amp;h=528&amp;q=80"
+                      class="aeql aeqt aero aerp aery aesz">
+                    <div class="aepg aepi aepl aero aetb aetc aete"></div>
+                  </div>
+                  <div class="aepk"><img alt="Alt"
+                      src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;h=528&amp;q=80"
+                      class="aeql aeqt aero aerp aery aesz">
+                    <div class="aepg aepi aepl aero aetb aetc aete"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<!-- /wp:wp/herowithimagetiles -->
+
+<!-- wp:wp/index -->
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="relative bg-white overflow-hidden">
+  <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
+    <svg class="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8 text-gray-200" width="640" height="784"
+      fill="none" viewBox="0 0 640 784">
+      <defs>
+        <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20"
+          patternUnits="userSpaceOnUse">
+          <circle cx="2" cy="2" r="2" width="4" height="4" class="text-gray-200" fill="currentColor" />
+        </pattern>
+      </defs>
+      <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+      <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+    </svg>
+  </div>
+
+  <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+    <div>
+      <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6" aria-label="Global">
+        <div class="flex items-center flex-1">
+          <div class="flex items-center justify-between w-full md:w-auto">
+            <a href="#">
+              <span class="sr-only">Workflow</span>
+              <img class="h-8 w-auto sm:h-10" src="img/
+logos/workflow-mark-fuchsia-600.svg" alt="Alt">
+            </a>
+            <div class="-mr-2 flex items-center md:hidden">
+              <button type="button"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fuchsia-500"
+                aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <!-- Heroicon name: outline/menu -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="hidden md:block md:ml-10 md:space-x-10">
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
+
+            <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
+          </div>
+        </div>
+        <div class="hidden md:block text-right">
+          <span class="inline-flex rounded-md shadow-md ring-1 ring-black ring-opacity-5">
+            <a href="#"
+              class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-fuchsia-600 bg-white hover:bg-gray-50">
+              Log in </a>
+          </span>
+        </div>
+      </nav>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="img/
+logos/workflow-mark-fuchsia-600.svg" alt="Alt">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fuchsia-500">
+                <span class="sr-only">Close main menu</span>
+                <!-- Heroicon name: outline/x -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+            <a href="#"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
+          </div>
+          <a href="#"
+            class="block w-full px-5 py-3 text-center font-medium text-fuchsia-600 bg-gray-50 hover:bg-gray-100">
+            Log in </a>
+        </div>
+      </div>
+    </div>
+
+    <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+      <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+        <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+          <h1>
+            <span
+              class="block text-sm font-semibold uppercase tracking-wide text-gray-500 sm:text-base lg:text-sm xl:text-base">Coming
+              soon</span>
+            <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
+              <span class="block text-gray-900">Data to enhance your</span>
+              <span class="block text-fuchsia-600">online business</span>
+            </span>
+          </h1>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">Anim aute id magna aliqua ad
+            ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
+            aliqua ad ad non deserunt sunt.</p>
+          <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+            <p class="text-base font-medium text-gray-900">Sign up to get notified when it’s ready.</p>
+            <form action="#" method="POST" class="mt-3 sm:flex">
+              <label for="email" class="sr-only">Email</label>
+              <input type="email" name="email" id="email"
+                class="block w-full py-3 px-2 text-base rounded-md placeholder-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:border-fuchsia-500 sm:flex-1 border border-gray-300"
+                placeholder="Enter your email">
+              <button type="submit"
+                class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">Notify
+                me</button>
+            </form>
+            <p class="mt-3 text-sm text-gray-500">
+              We’re dedicated to keeping your data safe and secure. Read our
+              <a href="#" class="font-medium text-gray-900 underline">Privacy Policy</a>.
+            </p>
+          </div>
+        </div>
+        <div
+          class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+          <svg
+            class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden text-gray-200"
+            width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
+            <defs>
+              <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20"
+                patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="2" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+            <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
+          </svg>
+          <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+            <button type="button"
+              class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-fuchsia-500">
+              <span class="sr-only">Watch our video to learn more</span>
+              <img class="w-full"
+                src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="Alt">
+              <div class="absolute inset-0 w-full h-full flex items-center justify-center" aria-hidden="true">
+                <svg class="h-20 w-20 text-fuchsia-500" fill="currentColor" viewBox="0 0 84 84">
+                  <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
+                  <path
+                    d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<!-- /wp:wp/index -->
+
+<!-- wp:wp/simplecenteredwithbackgroundimage -->
+<style>
+  /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+  @layer properties {
+    @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+
+      *,
+      :before,
+      :after,
+      ::backdrop {
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-translate-z: 0;
+        --tw-space-y-reverse: 0;
+        --tw-divide-y-reverse: 0;
+        --tw-border-style: solid;
+        --tw-gradient-position: initial;
+        --tw-gradient-from: #0000;
+        --tw-gradient-via: #0000;
+        --tw-gradient-to: #0000;
+        --tw-gradient-stops: initial;
+        --tw-gradient-via-stops: initial;
+        --tw-gradient-from-position: 0%;
+        --tw-gradient-via-position: 50%;
+        --tw-gradient-to-position: 100%;
+        --tw-font-weight: initial;
+        --tw-tracking: initial;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-color: initial;
+        --tw-shadow-alpha: 100%;
+        --tw-inset-shadow: 0 0 #0000;
+        --tw-inset-shadow-color: initial;
+        --tw-inset-shadow-alpha: 100%;
+        --tw-ring-color: initial;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-inset-ring-color: initial;
+        --tw-inset-ring-shadow: 0 0 #0000;
+        --tw-ring-inset: initial;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-blur: initial;
+        --tw-brightness: initial;
+        --tw-contrast: initial;
+        --tw-grayscale: initial;
+        --tw-hue-rotate: initial;
+        --tw-invert: initial;
+        --tw-opacity: initial;
+        --tw-saturate: initial;
+        --tw-sepia: initial;
+        --tw-drop-shadow: initial;
+        --tw-drop-shadow-color: initial;
+        --tw-drop-shadow-alpha: 100%;
+        --tw-drop-shadow-size: initial;
+        --tw-outline-style: solid
+      }
+    }
+  }
+
+  @layer theme {
+
+    :root,
+    :host {
+      --font-sans: InterVariable, system-ui, sans-serif;
+      --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"
+    }
+  }
+
+  @layer base {
+
+    *,
+    :after,
+    :before,
+    ::backdrop {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    ::file-selector-button {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    :host {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      line-height: 1.5;
+      font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      font-feature-settings: var(--font-sans--font-feature-settings);
+      font-variation-settings: initial;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-feature-settings: initial;
+      font-variation-settings: initial;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      vertical-align: baseline;
+      font-size: 75%;
+      line-height: 0;
+      position: relative
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    summary {
+      display: list-item
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none
+    }
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      vertical-align: middle;
+      display: block
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    ::file-selector-button {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    :where(select:is([multiple], [size])) optgroup {
+      font-weight: bolder
+    }
+
+    :where(select:is([multiple], [size])) optgroup option {
+      padding-inline-start: 20px
+    }
+
+    ::file-selector-button {
+      margin-inline-end: 4px
+    }
+
+    ::placeholder {
+      opacity: 1
+    }
+
+    @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+      ::placeholder {
+        color: currentColor
+      }
+
+      @supports (color:color-mix(in lab, red, red)) {
+        ::placeholder {
+          color: color-mix(in oklab, currentcolor 50%, transparent)
+        }
+      }
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-date-and-time-value {
+      min-height: 1lh;
+      text-align: inherit
+    }
+
+    ::-webkit-datetime-edit {
+      display: inline-flex
+    }
+
+    ::-webkit-datetime-edit-fields-wrapper {
+      padding: 0
+    }
+
+    ::-webkit-datetime-edit {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-year-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-month-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-day-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-hour-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-minute-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-second-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-millisecond-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-meridiem-field {
+      padding-block: 0
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    button,
+    input:where([type=button], [type=reset], [type=submit]) {
+      appearance: button
+    }
+
+    ::file-selector-button {
+      appearance: button
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none !important
+    }
+  }
+
+  @layer components;
+
+  @layer utilities {
+    .abqm {
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      position: absolute;
+      overflow: hidden
+    }
+
+    .abqn {
+      position: absolute
+    }
+
+    .abqo {
+      position: fixed
+    }
+
+    .abqp {
+      position: relative
+    }
+
+    .abqq {
+      inset: 0
+    }
+
+    .abqr {
+      inset-inline: 0
+    }
+
+    .abqs {
+      inset-block: 0
+    }
+
+    .abqt {
+      top: -10rem
+    }
+
+    .abqu {
+      top: 0
+    }
+
+    .abqv {
+      top: calc(100% - 13rem)
+    }
+
+    .abqw {
+      right: 0
+    }
+
+    .abqx {
+      left: calc(50% + 3rem)
+    }
+
+    .abqy {
+      left: calc(50% - 11rem)
+    }
+
+    .abqz {
+      isolation: isolate
+    }
+
+    .abra {
+      z-index: calc(10*-1)
+    }
+
+    .abrb {
+      z-index: 50
+    }
+
+    .abrc {
+      margin: -.375rem
+    }
+
+    .abrd {
+      margin: -.625rem
+    }
+
+    .abre {
+      margin-inline: -.75rem
+    }
+
+    .abrf {
+      margin-inline: auto
+    }
+
+    .abrg {
+      margin-block: -1.5rem
+    }
+
+    .abrh {
+      margin-top: 1.5rem
+    }
+
+    .abri {
+      margin-top: 2rem
+    }
+
+    .abrj {
+      margin-top: 2.5rem
+    }
+
+    .abrk {
+      display: block
+    }
+
+    .abrl {
+      display: flex
+    }
+
+    .abrm {
+      display: flow-root
+    }
+
+    .abrn {
+      display: none
+    }
+
+    .abro {
+      display: inline-flex
+    }
+
+    .abrp {
+      aspect-ratio: 1155/678
+    }
+
+    .abrq {
+      width: 1.5rem;
+      height: 1.5rem
+    }
+
+    .abrr {
+      width: 100%;
+      height: 100%
+    }
+
+    .abrs {
+      height: 2rem
+    }
+
+    .abrt {
+      width: 36.125rem
+    }
+
+    .abru {
+      width: auto
+    }
+
+    .abrv {
+      width: 100%
+    }
+
+    .abrw {
+      max-width: 42rem
+    }
+
+    .abrx {
+      max-width: 80rem
+    }
+
+    .abry {
+      --tw-translate-x: calc(calc(1/2*100%)*-1);
+      translate: var(--tw-translate-x)var(--tw-translate-y)
+    }
+
+    .abrz {
+      rotate: 30deg
+    }
+
+    .absa {
+      transform: translateZ(0)var(--tw-rotate-x, )var(--tw-rotate-y, )var(--tw-rotate-z, )var(--tw-skew-x, )var(--tw-skew-y, )
+    }
+
+    .absb {
+      align-items: center
+    }
+
+    .absc {
+      justify-content: space-between
+    }
+
+    .absd {
+      justify-content: center
+    }
+
+    :where(.abse>:not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(.25rem*2)*var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(.25rem*2)*calc(1 - var(--tw-space-y-reverse)))
+    }
+
+    .absf {
+      column-gap: 1.5rem
+    }
+
+    :where(.absg>:not(:last-child)) {
+      --tw-divide-y-reverse: 0;
+      border-bottom-style: var(--tw-border-style);
+      border-top-style: var(--tw-border-style);
+      border-top-width: calc(1px*var(--tw-divide-y-reverse));
+      border-bottom-width: calc(1px*calc(1 - var(--tw-divide-y-reverse)))
+    }
+
+    :where(.absh>:not(:last-child)) {
+      border-color: oklab(55.1% -.00265162 -.0268695/.25)
+    }
+
+    .absi {
+      overflow: hidden
+    }
+
+    .absj {
+      overflow-y: auto
+    }
+
+    .absk {
+      border-radius: 3.40282e38px
+    }
+
+    .absl {
+      border-radius: .5rem
+    }
+
+    .absm {
+      border-radius: .375rem
+    }
+
+    .absn {
+      background-color: #101828
+    }
+
+    .abso {
+      background-color: #e12afb
+    }
+
+    .absp {
+      --tw-gradient-position: to top right
+    }
+
+    @supports (background-image:linear-gradient(in lab, red, red)) {
+      .absp {
+        --tw-gradient-position: to top right in oklab
+      }
+    }
+
+    .absp {
+      background-image: linear-gradient(var(--tw-gradient-stops))
+    }
+
+    .absq {
+      --tw-gradient-from: #ff80b5;
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from)var(--tw-gradient-from-position), var(--tw-gradient-to)var(--tw-gradient-to-position))
+    }
+
+    .absr {
+      --tw-gradient-to: #9089fc;
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from)var(--tw-gradient-from-position), var(--tw-gradient-to)var(--tw-gradient-to-position))
+    }
+
+    .abss {
+      object-fit: cover
+    }
+
+    .abst {
+      padding: .375rem
+    }
+
+    .absu {
+      padding: .625rem
+    }
+
+    .absv {
+      padding: 1.5rem
+    }
+
+    .absw {
+      padding-inline: .75rem
+    }
+
+    .absx {
+      padding-inline: .875rem
+    }
+
+    .absy {
+      padding-inline: 1.5rem
+    }
+
+    .absz {
+      padding-block: .25rem
+    }
+
+    .abta {
+      padding-block: .5rem
+    }
+
+    .abtb {
+      padding-block: .625rem
+    }
+
+    .abtc {
+      padding-block: 1.5rem
+    }
+
+    .abtd {
+      padding-block: 8rem
+    }
+
+    .abte {
+      padding-top: 3.5rem
+    }
+
+    .abtf {
+      text-align: center
+    }
+
+    .abtg {
+      font-size: 3rem;
+      line-height: var(--tw-leading, 1)
+    }
+
+    .abth {
+      font-size: 1rem;
+      line-height: 1.75rem
+    }
+
+    .abti {
+      font-size: 1.125rem;
+      line-height: var(--tw-leading, calc(1.75/1.125))
+    }
+
+    .abtj {
+      font-size: .875rem;
+      line-height: var(--tw-leading, calc(1.25/.875))
+    }
+
+    .abtk {
+      font-size: .875rem;
+      line-height: 1.5rem
+    }
+
+    .abtl {
+      --tw-font-weight: 500;
+      font-weight: 500
+    }
+
+    .abtm {
+      --tw-font-weight: 600;
+      font-weight: 600
+    }
+
+    .abtn {
+      --tw-tracking: -.025em;
+      letter-spacing: -.025em
+    }
+
+    .abto {
+      text-wrap: balance
+    }
+
+    .abtp {
+      text-wrap: pretty
+    }
+
+    .abtq {
+      color: #99a1af
+    }
+
+    .abtr {
+      color: #fff
+    }
+
+    .abts {
+      opacity: .2
+    }
+
+    .abtt {
+      --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, #0000000d);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .abtu {
+      --tw-ring-shadow: var(--tw-ring-inset, )0 0 0 calc(1px + var(--tw-ring-offset-width))var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .abtv {
+      --tw-ring-color: rgba(255, 255, 255, 0.1)
+    }
+
+    .abtw {
+      --tw-blur: blur(64px);
+      filter: var(--tw-blur, )var(--tw-brightness, )var(--tw-contrast, )var(--tw-grayscale, )var(--tw-hue-rotate, )var(--tw-invert, )var(--tw-saturate, )var(--tw-sepia, )var(--tw-drop-shadow, )
+    }
+
+    .abtx::backdrop {
+      background-color: #0000
+    }
+
+    @media (hover:hover) {
+      .abty:hover {
+        background-color: #4a5565
+      }
+
+      .abtz:hover {
+        background-color: #ed6bff
+      }
+
+      .abua:hover {
+        --tw-ring-color: oklab(100% 0 5.96046e-8/.2)
+      }
+    }
+
+    .abub:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 2px
+    }
+
+    .abuc:focus-visible {
+      outline-offset: 2px
+    }
+
+    .abud:focus-visible {
+      outline-color: #ed6bff
+    }
+
+    @media (min-width:40rem) {
+      .abue {
+        top: -20rem
+      }
+
+      .abuf {
+        top: calc(100% - 30rem)
+      }
+
+      .abug {
+        left: calc(50% + 36rem)
+      }
+
+      .abuh {
+        left: calc(50% - 30rem)
+      }
+
+      .abui {
+        margin-bottom: 2rem
+      }
+
+      .abuj {
+        display: flex
+      }
+
+      .abuk {
+        width: 72.1875rem
+      }
+
+      .abul {
+        max-width: 24rem
+      }
+
+      .abum {
+        justify-content: center
+      }
+
+      .abun {
+        padding-block: 12rem
+      }
+
+      .abuo {
+        font-size: 4.5rem;
+        line-height: var(--tw-leading, 1)
+      }
+
+      .abup {
+        font-size: 1.25rem;
+      }
+    }
+  }
+</style>
+<div class="absn">
+  <header class="abqn abqr abqu abrb">
+    <nav aria-label="Global" class="abrl absb absc absv abux">
+      <div class="abrl abuu"><a href="#" class="abrc abst"><span class="abqm">Your Company</span><img alt="Alt"
+            src="http://localhost/mark-500.svg" class="abrs abru"></a>
+      </div>
+      <div class="abrl abut"><button type="button" class="abrd abro absb absd absm absu abtq"><span class="abqm">Open
+            main menu</span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" aria-hidden="true" data-slot="icon" class="abrq">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+            </path>
+          </svg></button></div>
+      <div class="abrn abus abuw"><a href="#" class="abtk abtm abtr">Product</a><a href="#"
+          class="abtk abtm abtr">Features</a><a href="#" class="abtk abtm abtr">Marketplace</a><a href="#"
+          class="abtk abtm abtr">Company</a></div>
+      <div class="abrn abus abuu abuv"><a href="#" class="abtk abtm abtr">Log in <span aria-hidden="true">→</span></a>
+      </div>
+    </nav>
+  </header>
+  <div class="abqp abqz absi abte"><img alt="Alt"
+      src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2830&amp;q=80&amp;blend=111827&amp;sat=-100&amp;exp=15&amp;blend-mode=multiply"
+      class="abqn abqq abra abrr abss">
+    <div aria-hidden="true" class="abqn abqr abqt abra absa absi abtw abue clip-path-parent">
+      <div class="abqp abqy abrp abrt abry abrz absp absq absr abts abuh abuk"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+      </div>
+    </div>
+    <div class="abrf abrx absy abux">
+      <div class="abrf abrw abtd abun abuy">
+        <div class="abrn abui abuj abum">
+          <div class="abqp absk absw absz abtk abtq abtu abtv abua">Announcing our next round of funding. <a href="#"
+              class="abtm abtr"><span aria-hidden="true" class="abqn abqq"></span>Read more <span
+                aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="abtf">
+          <h1 class="abtg abtm abtn abto abtr abuo">Data to enrich your online business</h1>
+          <p class="abri abti abtl abtp abtq abup">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+          <div class="abrj abrl absb absd absf"><a href="#"
+              class="absm abso absx abtb abtj abtm abtr abtt abtz abub abuc abud">Get started</a><a href="#"
+              class="abtk abtm abtr">Learn more <span aria-hidden="true">→</span></a></div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" class="abqn abqr abqv abra absa absi abtw abuf clip-path-parent">
+      <div class="abqp abqx abrp abrt abry absp absq absr abts abug abuk"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%);">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /wp:wp/simplecenteredwithbackgroundimage --></body>
+</html>

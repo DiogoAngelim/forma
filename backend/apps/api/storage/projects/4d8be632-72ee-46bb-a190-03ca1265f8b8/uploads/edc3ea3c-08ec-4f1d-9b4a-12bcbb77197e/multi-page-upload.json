@@ -1,0 +1,25 @@
+{
+  "uploadId": "edc3ea3c-08ec-4f1d-9b4a-12bcbb77197e",
+  "files": [
+    {
+      "path": "card_with_background_image.html",
+      "mime": "text/html",
+      "size": 9974
+    },
+    {
+      "path": "dark_with_illustration.html",
+      "mime": "text/html",
+      "size": 8608
+    },
+    {
+      "path": "hero_simple_centered.html",
+      "mime": "text/html",
+      "size": 7573
+    }
+  ],
+  "order": [
+    "card_with_background_image.html",
+    "dark_with_illustration.html",
+    "hero_simple_centered.html"
+  ]
+}

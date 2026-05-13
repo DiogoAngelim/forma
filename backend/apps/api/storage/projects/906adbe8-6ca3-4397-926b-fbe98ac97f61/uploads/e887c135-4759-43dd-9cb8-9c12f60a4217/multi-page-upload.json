@@ -1,0 +1,49 @@
+{
+  "uploadId": "e887c135-4759-43dd-9cb8-9c12f60a4217",
+  "files": [
+    {
+      "path": "card_with_background_image.html",
+      "mime": "text/html",
+      "size": 9974
+    },
+    {
+      "path": "dark_with_illustration.html",
+      "mime": "text/html",
+      "size": 8608
+    },
+    {
+      "path": "hero_simple_centered.html",
+      "mime": "text/html",
+      "size": 7573
+    },
+    {
+      "path": "hero_split_with_image.html",
+      "mime": "text/html",
+      "size": 13673
+    },
+    {
+      "path": "hero_with_image_tiles.html",
+      "mime": "text/html",
+      "size": 20442
+    },
+    {
+      "path": "index.html",
+      "mime": "text/html",
+      "size": 9996
+    },
+    {
+      "path": "simple_centered_with_background_image.html",
+      "mime": "text/html",
+      "size": 18092
+    }
+  ],
+  "order": [
+    "card_with_background_image.html",
+    "dark_with_illustration.html",
+    "hero_simple_centered.html",
+    "hero_split_with_image.html",
+    "hero_with_image_tiles.html",
+    "index.html",
+    "simple_centered_with_background_image.html"
+  ]
+}

@@ -1,0 +1,810 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base target="_blank">
+</head>
+<body><div>
+    <div className="custom-block">
+        <style>
+            /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+              @layer properties {
+                @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+            
+                  *,
+                  :before,
+                  :after,
+                  ::backdrop {
+                    --tw-font-weight: initial;
+                    --tw-tracking: initial
+                  }
+                }
+              }
+            
+              @layer theme {
+            
+                :root,
+                :host {
+                  --font-sans: InterVariable, system-ui, sans-serif;
+                  --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"
+                }
+              }
+            
+              @layer base {
+            
+                *,
+                :after,
+                :before,
+                ::backdrop {
+                  box-sizing: border-box;
+                  border: 0 solid;
+                  margin: 0;
+                  padding: 0
+                }
+            
+                ::file-selector-button {
+                  box-sizing: border-box;
+                  border: 0 solid;
+                  margin: 0;
+                  padding: 0
+                }
+            
+                html,
+                :host {
+                  -webkit-text-size-adjust: 100%;
+                  tab-size: 4;
+                  line-height: 1.5;
+                  font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+                  font-feature-settings: var(--font-sans--font-feature-settings);
+                  font-variation-settings: initial;
+                  -webkit-tap-highlight-color: transparent
+                }
+            
+                hr {
+                  height: 0;
+                  color: inherit;
+                  border-top-width: 1px
+                }
+            
+                abbr:where([title]) {
+                  -webkit-text-decoration: underline dotted;
+                  text-decoration: underline dotted
+                }
+            
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                  font-size: inherit;
+                  font-weight: inherit
+                }
+            
+                a {
+                  color: inherit;
+                  -webkit-text-decoration: inherit;
+                  -webkit-text-decoration: inherit;
+                  -webkit-text-decoration: inherit;
+                  text-decoration: inherit
+                }
+            
+                b,
+                strong {
+                  font-weight: bolder
+                }
+            
+                code,
+                kbd,
+                samp,
+                pre {
+                  font-feature-settings: initial;
+                  font-variation-settings: initial;
+                  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+                  font-size: 1em
+                }
+            
+                small {
+                  font-size: 80%
+                }
+            
+                sub,
+                sup {
+                  vertical-align: baseline;
+                  font-size: 75%;
+                  line-height: 0;
+                  position: relative
+                }
+            
+                sub {
+                  bottom: -.25em
+                }
+            
+                sup {
+                  top: -.5em
+                }
+            
+                table {
+                  text-indent: 0;
+                  border-color: inherit;
+                  border-collapse: collapse
+                }
+            
+                :-moz-focusring {
+                  outline: auto
+                }
+            
+                progress {
+                  vertical-align: baseline
+                }
+            
+                summary {
+                  display: list-item
+                }
+            
+                ol,
+                ul,
+                menu {
+                  list-style: none
+                }
+            
+                img,
+                svg,
+                video,
+                canvas,
+                audio,
+                iframe,
+                embed,
+                object {
+                  vertical-align: middle;
+                  display: block
+                }
+            
+                img,
+                video {
+                  max-width: 100%;
+                  height: auto
+                }
+            
+                button,
+                input,
+                select,
+                optgroup,
+                textarea {
+                  font: inherit;
+                  font-feature-settings: inherit;
+                  font-variation-settings: inherit;
+                  letter-spacing: inherit;
+                  color: inherit;
+                  opacity: 1;
+                  background-color: #0000;
+                  border-radius: 0
+                }
+            
+                ::file-selector-button {
+                  font: inherit;
+                  font-feature-settings: inherit;
+                  font-variation-settings: inherit;
+                  letter-spacing: inherit;
+                  color: inherit;
+                  opacity: 1;
+                  background-color: #0000;
+                  border-radius: 0
+                }
+            
+                :where(select:is([multiple], [size])) optgroup {
+                  font-weight: bolder
+                }
+            
+                :where(select:is([multiple], [size])) optgroup option {
+                  padding-inline-start: 20px
+                }
+            
+                ::file-selector-button {
+                  margin-inline-end: 4px
+                }
+            
+                ::placeholder {
+                  opacity: 1
+                }
+            
+                @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+                  ::placeholder {
+                    color: currentColor
+                  }
+            
+                  @supports (color:color-mix(in lab, red, red)) {
+                    ::placeholder {
+                      color: color-mix(in oklab, currentcolor 50%, transparent)
+                    }
+                  }
+                }
+            
+                textarea {
+                  resize: vertical
+                }
+            
+                ::-webkit-search-decoration {
+                  -webkit-appearance: none
+                }
+            
+                ::-webkit-date-and-time-value {
+                  min-height: 1lh;
+                  text-align: inherit
+                }
+            
+                ::-webkit-datetime-edit {
+                  display: inline-flex
+                }
+            
+                ::-webkit-datetime-edit-fields-wrapper {
+                  padding: 0
+                }
+            
+                ::-webkit-datetime-edit {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-year-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-month-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-day-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-hour-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-minute-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-second-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-millisecond-field {
+                  padding-block: 0
+                }
+            
+                ::-webkit-datetime-edit-meridiem-field {
+                  padding-block: 0
+                }
+            
+                :-moz-ui-invalid {
+                  box-shadow: none
+                }
+            
+                button,
+                input:where([type=button], [type=reset], [type=submit]) {
+                  appearance: button
+                }
+            
+                ::file-selector-button {
+                  appearance: button
+                }
+            
+                ::-webkit-inner-spin-button {
+                  height: auto
+                }
+            
+                ::-webkit-outer-spin-button {
+                  height: auto
+                }
+            
+                [hidden]:where(:not([hidden=until-found])) {
+                  display: none !important
+                }
+              }
+            
+              @layer components;
+            
+              @layer utilities {
+                .jhw {
+                  clip: rect(0, 0, 0, 0);
+                  white-space: nowrap;
+                  border-width: 0;
+                  width: 1px;
+                  height: 1px;
+                  margin: -1px;
+                  padding: 0;
+                  position: absolute;
+                  overflow: hidden
+                }
+            
+                .jhx {
+                  margin-inline: auto
+                }
+            
+                .jhy {
+                  margin-top: 1.5rem
+                }
+            
+                .jhz {
+                  margin-top: 5rem
+                }
+            
+                .jia {
+                  display: flex
+                }
+            
+                .jib {
+                  display: grid
+                }
+            
+                .jic {
+                  width: 1.25rem;
+                  height: 1.25rem
+                }
+            
+                .jid {
+                  width: 14rem;
+                  height: 14rem
+                }
+            
+                .jie {
+                  max-width: 42rem
+                }
+            
+                .jif {
+                  max-width: 80rem
+                }
+            
+                .jig {
+                  grid-template-columns: repeat(1, minmax(0, 1fr))
+                }
+            
+                .jih {
+                  justify-content: center
+                }
+            
+                .jii {
+                  column-gap: 1.5rem
+                }
+            
+                .jij {
+                  column-gap: 2rem
+                }
+            
+                .jik {
+                  row-gap: 4rem
+                }
+            
+                .jil {
+                  border-radius: 3.40282e38px
+                }
+            
+                .jim {
+                  background-color: #fff
+                }
+            
+                .jin {
+                  padding-inline: 1.5rem
+                }
+            
+                .jio {
+                  padding-block: 8rem
+                }
+            
+                .jip {
+                  text-align: center
+                }
+            
+                .jiq {
+                  font-size: 1rem;
+                  line-height: 1.75rem
+                }
+            
+                .jir {
+                  font-size: 1.125rem;
+                  line-height: 2rem
+                }
+            
+                .jis {
+                  font-size: .875rem;
+                  line-height: 1.5rem
+                }
+            
+                .jit {
+                  --tw-font-weight: 600;
+                  font-weight: 600
+                }
+            
+                .jiu {
+                  --tw-tracking: -.025em;
+                  letter-spacing: -.025em
+                }
+            
+                .jiv {
+                  text-wrap: balance
+                }
+            
+                .jiw {
+                  color: #99a1af
+                }
+            
+                .jix {
+                  color: #4a5565
+                }
+            
+                .jiy {
+                  color: #101828
+                }
+            
+                @media (hover:hover) {
+                  .jiz:hover {
+                    color: #ed6bff
+                  }
+                }
+            
+                @media (min-width:40rem) {
+                  .jja {
+                    grid-template-columns: repeat(2, minmax(0, 1fr))
+                  }
+            
+                  .jjb {
+                    font-size: 3rem;
+                    line-height: var(--tw-leading, 1)
+                  }
+                }
+            
+                @media (min-width:64rem) {
+                  .jjc {
+                    margin-inline: 0
+                  }
+            
+                  .jjd {
+                    max-width: none
+                  }
+            
+                  .jje {
+                    grid-template-columns: repeat(3, minmax(0, 1fr))
+                  }
+            
+                  .jjf {
+                    padding-inline: 2rem
+                  }
+                }
+              }
+            
+              @property --tw-font-weight {
+                syntax: "*";
+                inherits: false
+              }
+            
+              @property --tw-tracking {
+                syntax: "*";
+                inherits: false
+              }
+        </style>
+        <div className="jim jio">
+            <div className="jhx jif jin jip jjf">
+                <div className="jhx jie">
+                     <h2 className="text-34l font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl"><RichText 
+      tagName="span"
+      value={attributes.contentuQT} 
+      default="Meet our leadership"
+      onChange={ (newtext) => {
+        setAttributes({ contentuQT: newtext });
+      }}
+    /></h2>
+
+                    <p className="jhy jir jix">
+                        <RichText tagName="span" value={attributes.contentsYN} default="We’re a dynamic group of individuals who are passionate about what we do and dedicated to
+        delivering the best results htmlFor our clients." onChange={ (newtext)=>{ setAttributes({ contentsYN: newtext }); }} /></p>
+                </div>
+                <ul role="list" className="jhx jhz jib jie jig jij jik jja jjc jjd jje">
+                    <li>
+                        <img alt="Alt" src="assets/photo-1517365830460-955ce3ccd263.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentJKk} 
+      default="Whitney Francis"
+      onChange={ (newtext) => {
+        setAttributes({ contentJKk: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentUSd} default="Copywriter"
+                            onChange={ (newtext)=>{ setAttributes({ contentUSd: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentRuE} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentRuE: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentIVm} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentIVm: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img alt="Alt" src="assets/photo-1519345182560-3f2917c472ef.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentkFK} 
+      default="Leonard Krasner"
+      onChange={ (newtext) => {
+        setAttributes({ contentkFK: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentoyQ} default="Senior Designer"
+                            onChange={ (newtext)=>{ setAttributes({ contentoyQ: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentLWX} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentLWX: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentMwQ} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentMwQ: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img alt="Alt" src="assets/photo-1463453091185-61582044d556.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentytE} 
+      default="Floyd Miles"
+      onChange={ (newtext) => {
+        setAttributes({ contentytE: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentdfC} default="Principal Designer"
+                            onChange={ (newtext)=>{ setAttributes({ contentdfC: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentQaB} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentQaB: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentwkE} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentwkE: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img alt="Alt" src="assets/photo-1502685104226-ee32379fefbe.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentYcj} 
+      default="Emily Selman"
+      onChange={ (newtext) => {
+        setAttributes({ contentYcj: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentvFA} default="VP, User Experience"
+                            onChange={ (newtext)=>{ setAttributes({ contentvFA: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentPay} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentPay: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentLPl} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentLPl: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img alt="Alt" src="assets/photo-1500917293891-ef795e70e1f6.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentQfL} 
+      default="Kristin Watson"
+      onChange={ (newtext) => {
+        setAttributes({ contentQfL: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentndn} default="VP, Human Resources"
+                            onChange={ (newtext)=>{ setAttributes({ contentndn: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentcGe} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentcGe: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentixk} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentixk: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img alt="Alt" src="assets/photo-1505840717430-882ce147ef2d.jpg" className="jhx jid jil"
+                        />
+                         <h3 className="jhy jiq jit jiu jiy"><RichText 
+      tagName="span"
+      value={attributes.contentuqL} 
+      default="Emma Dorsey"
+      onChange={ (newtext) => {
+        setAttributes({ contentuqL: newtext });
+      }}
+    /></h3>
+
+                        <p className="jis jix">
+                            <RichText tagName="span" value={attributes.contentMNn} default="Senior Developer"
+                            onChange={ (newtext)=>{ setAttributes({ contentMNn: newtext }); }} /></p>
+                        <ul role="list" className="jhy jia jih jii">
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentezC} 
+      default="X"
+      onChange={ (newtext) => {
+        setAttributes({ contentezC: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z">
+                </path>
+              </svg></a>
+
+                            </li>
+                            <li><a href="#" className="jiw jiz"><span className="jhw"
+    ><RichText 
+      tagName="span"
+      value={attributes.contentfWP} 
+      default="LinkedIn"
+      onChange={ (newtext) => {
+        setAttributes({ contentfWP: newtext });
+      }}
+    /></span><svg fill="currentColor" viewBox="0 0 20 20"
+                aria-hidden="true" className="jic">
+                <path
+                  d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                  clip-rule="evenodd" fill-rule="evenodd"></path>
+              </svg></a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- forma:normalize_typography {"maxScaleSteps":6} --></body>
+</html>

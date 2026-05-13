@@ -1,0 +1,22 @@
+{
+  "name": "@forma/gutenberg-generator",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --coverage",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@forma/shared": "0.1.0",
+    "html-to-gutenberg": "^4.2.10",
+    "jszip": "^3.10.1",
+    "zod": "^3.24.1",
+    "node-html-to-jsx": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.1.8"
+  }
+}

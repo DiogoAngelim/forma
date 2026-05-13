@@ -1,0 +1,3 @@
+.wp-block-wp-herosimplecentered *:not(.components-button) {
+  all: revert-layer;
+    }

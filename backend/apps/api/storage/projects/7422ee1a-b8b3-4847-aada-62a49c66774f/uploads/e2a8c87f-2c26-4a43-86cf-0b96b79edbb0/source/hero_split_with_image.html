@@ -1,0 +1,761 @@
+<style>
+  /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+  @layer properties {
+    @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+
+      *,
+      :before,
+      :after,
+      ::backdrop {
+        --tw-font-weight: initial;
+        --tw-tracking: initial;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-color: initial;
+        --tw-shadow-alpha: 100%;
+        --tw-inset-shadow: 0 0 #0000;
+        --tw-inset-shadow-color: initial;
+        --tw-inset-shadow-alpha: 100%;
+        --tw-ring-color: initial;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-inset-ring-color: initial;
+        --tw-inset-ring-shadow: 0 0 #0000;
+        --tw-ring-inset: initial;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-outline-style: solid
+      }
+    }
+  }
+
+  @layer theme {
+
+    :root,
+    :host {
+      --font-sans: InterVariable, system-ui, sans-serif;
+      --font-sans--font-feature-settings: "cv02", "cv03", "cv04", "cv11"
+    }
+  }
+
+  @layer base {
+
+    *,
+    :after,
+    :before,
+    ::backdrop {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    ::file-selector-button {
+      box-sizing: border-box;
+      border: 0 solid;
+      margin: 0;
+      padding: 0
+    }
+
+    html,
+    :host {
+      -webkit-text-size-adjust: 100%;
+      tab-size: 4;
+      line-height: 1.5;
+      font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji");
+      font-feature-settings: var(--font-sans--font-feature-settings);
+      font-variation-settings: initial;
+      -webkit-tap-highlight-color: transparent
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      -webkit-text-decoration: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    samp,
+    pre {
+      font-feature-settings: initial;
+      font-variation-settings: initial;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      vertical-align: baseline;
+      font-size: 75%;
+      line-height: 0;
+      position: relative
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    summary {
+      display: list-item
+    }
+
+    ol,
+    ul,
+    menu {
+      list-style: none
+    }
+
+    img,
+    svg,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+      vertical-align: middle;
+      display: block
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    button,
+    input,
+    select,
+    optgroup,
+    textarea {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    ::file-selector-button {
+      font: inherit;
+      font-feature-settings: inherit;
+      font-variation-settings: inherit;
+      letter-spacing: inherit;
+      color: inherit;
+      opacity: 1;
+      background-color: #0000;
+      border-radius: 0
+    }
+
+    :where(select:is([multiple], [size])) optgroup {
+      font-weight: bolder
+    }
+
+    :where(select:is([multiple], [size])) optgroup option {
+      padding-inline-start: 20px
+    }
+
+    ::file-selector-button {
+      margin-inline-end: 4px
+    }
+
+    ::placeholder {
+      opacity: 1
+    }
+
+    @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+      ::placeholder {
+        color: currentColor
+      }
+
+      @supports (color:color-mix(in lab, red, red)) {
+        ::placeholder {
+          color: color-mix(in oklab, currentcolor 50%, transparent)
+        }
+      }
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-date-and-time-value {
+      min-height: 1lh;
+      text-align: inherit
+    }
+
+    ::-webkit-datetime-edit {
+      display: inline-flex
+    }
+
+    ::-webkit-datetime-edit-fields-wrapper {
+      padding: 0
+    }
+
+    ::-webkit-datetime-edit {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-year-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-month-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-day-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-hour-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-minute-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-second-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-millisecond-field {
+      padding-block: 0
+    }
+
+    ::-webkit-datetime-edit-meridiem-field {
+      padding-block: 0
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    button,
+    input:where([type=button], [type=reset], [type=submit]) {
+      appearance: button
+    }
+
+    ::file-selector-button {
+      appearance: button
+    }
+
+    ::-webkit-inner-spin-button {
+      height: auto
+    }
+
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [hidden]:where(:not([hidden=until-found])) {
+      display: none !important
+    }
+  }
+
+  @layer components;
+
+  @layer utilities {
+    .rhw {
+      position: absolute
+    }
+
+    .rhx {
+      position: relative
+    }
+
+    .rhy {
+      inset: 0
+    }
+
+    .rhz {
+      margin-inline: auto
+    }
+
+    .ria {
+      margin-top: 2rem
+    }
+
+    .rib {
+      margin-top: 2.5rem
+    }
+
+    .ric {
+      margin-top: 6rem
+    }
+
+    .rid {
+      display: flex
+    }
+
+    .rie {
+      display: none
+    }
+
+    .rif {
+      aspect-ratio: 3/2
+    }
+
+    .rig {
+      height: 2.75rem
+    }
+
+    .rih {
+      width: 100%
+    }
+
+    .rii {
+      max-width: 80rem
+    }
+
+    .rij {
+      max-width: 32rem
+    }
+
+    .rik {
+      align-items: center
+    }
+
+    .ril {
+      column-gap: 1.5rem
+    }
+
+    .rim {
+      border-radius: 3.40282e38px
+    }
+
+    .rin {
+      border-radius: .375rem
+    }
+
+    .rio {
+      background-color: #f9fafb
+    }
+
+    .rip {
+      background-color: #c800de
+    }
+
+    .riq {
+      background-color: #fff
+    }
+
+    .rir {
+      object-fit: cover
+    }
+
+    .ris {
+      padding-inline: .75rem
+    }
+
+    .rit {
+      padding-inline: .875rem
+    }
+
+    .riu {
+      padding-inline: 1.5rem
+    }
+
+    .riv {
+      padding-block: .25rem
+    }
+
+    .riw {
+      padding-block: .625rem
+    }
+
+    .rix {
+      padding-top: 2.5rem
+    }
+
+    .riy {
+      padding-bottom: 6rem
+    }
+
+    .riz {
+      font-size: 3rem;
+      line-height: var(--tw-leading, 1)
+    }
+
+    .rja {
+      font-size: 1.125rem;
+      line-height: var(--tw-leading, calc(1.75/1.125))
+    }
+
+    .rjb {
+      font-size: .875rem;
+      line-height: var(--tw-leading, calc(1.25/.875))
+    }
+
+    .rjc {
+      font-size: .875rem;
+      line-height: 1.5rem
+    }
+
+    .rjd {
+      --tw-font-weight: 500;
+      font-weight: 500
+    }
+
+    .rje {
+      --tw-font-weight: 600;
+      font-weight: 600
+    }
+
+    .rjf {
+      --tw-tracking: -.025em;
+      letter-spacing: -.025em
+    }
+
+    .rjg {
+      text-wrap: pretty
+    }
+
+    .rjh {
+      white-space: nowrap
+    }
+
+    .rji {
+      color: rgb(106, 114, 130)
+    }
+
+    .rjj {
+      color: #101828
+    }
+
+    .rjk {
+      color: #c800de
+    }
+
+    .rjl {
+      color: #fff
+    }
+
+    .rjm {
+      --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, #0000000d);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .rjn {
+      --tw-ring-shadow: var(--tw-ring-inset, )0 0 0 calc(1px + var(--tw-ring-offset-width))var(--tw-ring-color, currentcolor);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+    }
+
+    .rjo {
+      --tw-ring-color: oklab(21% -.00316127 -.0338527/.1)
+    }
+
+    @media (hover:hover) {
+      .rjp:hover {
+        background-color: #e12afb
+      }
+
+      .rjq:hover {
+        --tw-ring-color: oklab(21% -.00316127 -.0338527/.2)
+      }
+    }
+
+    .rjr:focus-visible {
+      outline-style: var(--tw-outline-style);
+      outline-width: 2px
+    }
+
+    .rjs:focus-visible {
+      outline-offset: 2px
+    }
+
+    .rjt:focus-visible {
+      outline-color: #c800de
+    }
+
+    @media (min-width:40rem) {
+      .rju {
+        margin-top: 2.5rem
+      }
+
+      .rjv {
+        margin-top: 8rem
+      }
+
+      .rjw {
+        display: flex
+      }
+
+      .rjx {
+        padding-bottom: 8rem
+      }
+
+      .rjy {
+        font-size: 4.5rem;
+        line-height: var(--tw-leading, 1)
+      }
+
+      .rjz {
+        font-size: 1.25rem;
+        line-height: 2rem
+      }
+    }
+
+    @media (min-width:64rem) {
+      .rka {
+        position: absolute
+      }
+
+      .rkb {
+        inset: 0
+      }
+
+      .rkc {
+        grid-column: span 5/span 5
+      }
+
+      .rkd {
+        grid-column: span 7/span 7
+      }
+
+      .rke {
+        margin-inline: 0
+      }
+
+      .rkf {
+        margin-top: 4rem
+      }
+
+      .rkg {
+        margin-right: -2rem
+      }
+
+      .rkh {
+        display: grid
+      }
+
+      .rki {
+        aspect-ratio: auto
+      }
+
+      .rkj {
+        height: 100%
+      }
+
+      .rkk {
+        grid-template-columns: repeat(12, minmax(0, 1fr))
+      }
+
+      .rkl {
+        column-gap: 2rem
+      }
+
+      .rkm {
+        padding-inline: 0
+      }
+
+      .rkn {
+        padding-inline: 2rem
+      }
+
+      .rko {
+        padding-top: 10rem
+      }
+
+      .rkp {
+        padding-bottom: 12rem
+      }
+    }
+
+    @media (min-width:80rem) {
+      .absolute {
+        position: absolute
+      }
+
+      .rkr {
+        inset: 0
+      }
+
+      .rks {
+        left: 50%
+      }
+
+      .rkt {
+        grid-column: span 6/span 6
+      }
+
+      .rku {
+        margin-right: 0
+      }
+    }
+  }
+
+  @property --tw-font-weight {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-tracking {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-shadow-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+  }
+
+  @property --tw-inset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-inset-shadow-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-inset-shadow-alpha {
+    syntax: "<percentage>";
+    inherits: false;
+    initial-value: 100%
+  }
+
+  @property --tw-ring-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-inset-ring-color {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-inset-ring-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-ring-inset {
+    syntax: "*";
+    inherits: false
+  }
+
+  @property --tw-ring-offset-width {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0
+  }
+
+  @property --tw-ring-offset-color {
+    syntax: "*";
+    inherits: false;
+    initial-value: #fff
+  }
+
+  @property --tw-ring-offset-shadow {
+    syntax: "*";
+    inherits: false;
+    initial-value: 0 0 #0000
+  }
+
+  @property --tw-outline-style {
+    syntax: "*";
+    inherits: false;
+    initial-value: solid
+  }
+</style>
+<div class="rhx riq">
+  <div class="rhz rii rkh rkk rkl rkn">
+    <div class="riu rix riy rjx rkd rkm rko rkp rkt">
+      <div class="rhz rij rke"><img alt="Your Company"
+          src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&amp;shade=600" class="rig">
+        <div class="rie rjv rjw rkf">
+          <div class="rhx rim ris riv rjc rji rjn rjo rjq">Anim aute id magna aliqua ad ad non deserunt sunt. <a
+              href="#" class="rje rjh rjk"><span aria-hidden="true" class="rhw rhy"></span>Read more <span
+                aria-hidden="true">→</span></a></div>
+        </div>
+        <h1 class="ric riz rje rjf rjg rjj rju rjy">Data to enrich your business</h1>
+        <p class="ria rja rjd rjg rji rjz">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+          cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+        <div class="rib rid rik ril"><a href="#" class="rin rip rit riw rjb rje rjl rjm rjp rjr rjs rjt">Get
+            started</a><a href="#" class="rjc rje rjj">Learn more <span aria-hidden="true">→</span></a></div>
+      </div>
+    </div>
+    <div class="rhx rkc rkg absolute rkr rks rku"><img alt="Alt"
+        src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2102&amp;q=80"
+        class="rif rih rio rir rka rkb rki rkj"></div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "blocks": [
+    {
+      "id": "block-1",
+      "name": "core/html",
+      "originalHtml": "<!doctype html><html><body><section class=\"card\"><h2>A</h2><p>Same repeated content</p></section><section class=\"card\"><h2>A</h2><p>Same repeated content</p></section></body></html>"
+    }
+  ],
+  "htmlEntry": "index.html"
+}

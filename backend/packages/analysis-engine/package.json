@@ -1,0 +1,24 @@
+{
+  "name": "@forma/analysis-engine",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run --coverage",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@forma/shared": "0.1.0",
+    "cheerio": "^1.0.0",
+    "css-tree": "^3.1.0",
+    "jsdom": "^25.0.1",
+    "postcss": "^8.4.49"
+  },
+  "devDependencies": {
+    "@types/css-tree": "^2.3.10",
+    "@types/jsdom": "^21.1.7",
+    "@vitest/coverage-v8": "^2.1.8"
+  }
+}

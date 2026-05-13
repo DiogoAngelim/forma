@@ -1,0 +1,29 @@
+{
+  "name": "forma-gutenberg-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @forma/shared && npm run build -w @forma/gutenberg-generator && npm run build -w @forma/analysis-engine && npm run build -w @forma/api",
+    "dev": "npm run dev -w @forma/api",
+    "test": "npm run test --workspaces --if-present",
+    "coverage": "npm run coverage --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "migrate": "npm run migrate -w @forma/api"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "stripe": "^22.1.1"
+  }
+}
